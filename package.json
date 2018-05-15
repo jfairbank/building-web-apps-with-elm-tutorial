@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "building-web-apps-with-elm-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:elm": "elm-package install -y",
+    "run:elm": "elm-live --output main.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfairbank/building-web-apps-with-elm-tutorial.git"
+  },
+  "author": "Jeremy Fairbank <elpapapollo@gmail.com> (http://jeremyfairbank.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfairbank/building-web-apps-with-elm-tutorial/issues"
+  },
+  "homepage": "https://github.com/jfairbank/building-web-apps-with-elm-tutorial#readme",
+  "dependencies": {
+    "elm": "^0.18.0",
+    "elm-live": "^2.7.5"
+  }
+}

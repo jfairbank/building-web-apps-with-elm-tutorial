@@ -108,7 +108,7 @@ if you fall behind and need a partially completed file to pick back up with.
 | Dynamic Applications | completed-demos/004-JazzAlbums.elm | https://ellie-app.com/p6pNrZw39fa1 |
 | Working with Lists | completed-demos/006-JazzAlbums.elm | https://ellie-app.com/p6q9xfkntra1 |
 | Static Types and Type Aliases | completed-demos/008-JazzAlbums.elm | https://ellie-app.com/p6qyzyymWZa1 |
-| Input Events and Union Types | completed-demos/009-JazzAlbums.elm | https://ellie-app.com/p6qZhkcZdba1 |
+| Input Events and Union Types | completed-demos/009-JazzAlbums.elm | https://ellie-app.com/rMkVmjhyJLa1 |
 
 ## Exercises
 
@@ -120,7 +120,7 @@ inside each file.
 | Syntax and Functions | exercises/002-Functions.elm | https://ellie-app.com/p6s6NTLLw3a1 |
 | Enhance a Dynamic Application | exercises/005-JazzAlbums.elm | https://ellie-app.com/p6sWQ6PRMRa1 |
 | Working with Lists | exercises/007-JazzAlbums.elm | https://ellie-app.com/p6tkdg7Nv2a1 |
-| Input Events and Union Types | exercises/010-JazzAlbums.elm | https://ellie-app.com/p6tSZWN278a1 |
+| Input Events and Union Types | exercises/010-JazzAlbums.elm | https://ellie-app.com/rMmB5NbRqja1 |
 
 ## Completed Exercises
 
@@ -135,7 +135,7 @@ to expand.
 | Syntax and Functions | completed-exercises/002-Functions.elm | https://ellie-app.com/p6vyYwsXj8a1 |
 | Enhance a Dynamic Application | completed-exercises/005-JazzAlbums.elm | https://ellie-app.com/p6vW7v94YQa1 |
 | Working with Lists | completed-exercises/007-JazzAlbums.elm | https://ellie-app.com/p6wkYZDXpWa1 |
-| Input Events and Union Types | completed-exercises/010-JazzAlbums.elm | https://ellie-app.com/p6wMKyCJx2a1 |
+| Input Events and Union Types | completed-exercises/010-JazzAlbums.elm | https://ellie-app.com/rMnrPczRw9a1 |
 
 </details>
 

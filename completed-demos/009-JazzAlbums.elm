@@ -13,23 +13,10 @@ baseUrl =
     "https://jazz-album-covers.surge.sh/images/"
 
 
-type alias Rating =
-    Int
-
-
-unrated : Rating
-unrated =
-    0
-
-
-liked : Rating
-liked =
-    1
-
-
-disliked : Rating
-disliked =
-    2
+type Rating
+    = Unrated
+    | Liked
+    | Disliked
 
 
 type alias Id =
@@ -51,25 +38,25 @@ albums =
       , title = "Kind of Blue"
       , coverUrl = baseUrl ++ "miles-davis-kind-of-blue.jpg"
       , artist = "Miles Davis"
-      , rating = unrated
+      , rating = Unrated
       }
     , { id = 2
       , title = "A Love Supreme"
       , coverUrl = baseUrl ++ "john-coltrane-a-love-supreme.jpg"
       , artist = "John Coltrane"
-      , rating = unrated
+      , rating = Unrated
       }
     , { id = 3
       , title = "Out to Lunch"
       , coverUrl = baseUrl ++ "eric-dolphy-out-to-lunch.jpg"
       , artist = "Eric Dolphy"
-      , rating = unrated
+      , rating = Unrated
       }
     , { id = 4
       , title = "Blue Train"
       , coverUrl = baseUrl ++ "john-coltrane-blue-train.jpg"
       , artist = "John Coltrane"
-      , rating = unrated
+      , rating = Unrated
       }
     ]
 
@@ -96,19 +83,19 @@ initialModel =
 updateRating : Rating -> Album -> Album
 updateRating rating album =
     if album.rating == rating then
-        { album | rating = unrated }
+        { album | rating = Unrated }
     else
         { album | rating = rating }
 
 
 like : Album -> Album
 like =
-    updateRating liked
+    updateRating Liked
 
 
 dislike : Album -> Album
 dislike =
-    updateRating disliked
+    updateRating Disliked
 
 
 updateAlbum : (Album -> Album) -> Id -> List Album -> List Album
@@ -126,7 +113,6 @@ updateAlbum updater id albums =
 type Msg
     = Like Id
     | Dislike Id
-    | Search String
 
 
 update : Msg -> Model -> Model
@@ -137,9 +123,6 @@ update msg model =
 
         Dislike id ->
             { model | albums = updateAlbum dislike id model.albums }
-
-        _ ->
-            model
 
 
 
@@ -154,7 +137,9 @@ filterAlbums model =
 view : Model -> Html Msg
 view model =
     div [ class "albums" ]
-        [ viewAlbumList model.albums ]
+        [ viewAlbumFilters model
+        , viewAlbumList model.albums
+        ]
 
 
 viewAlbumFilters : Model -> Html Msg
@@ -188,13 +173,13 @@ viewAlbum album =
             , div [ class "album__rating" ]
                 [ i
                     [ class "far fa-lg fa-thumbs-up"
-                    , classList [ ( "fa-thumbs-up--selected", album.rating == liked ) ]
+                    , classList [ ( "fa-thumbs-up--selected", album.rating == Liked ) ]
                     , onClick (Like album.id)
                     ]
                     []
                 , i
                     [ class "far fa-lg fa-thumbs-down"
-                    , classList [ ( "fa-thumbs-down--selected", album.rating == disliked ) ]
+                    , classList [ ( "fa-thumbs-down--selected", album.rating == Disliked ) ]
                     , onClick (Dislike album.id)
                     ]
                     []

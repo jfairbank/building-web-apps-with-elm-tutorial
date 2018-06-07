@@ -14,25 +14,6 @@ baseUrl =
     "https://jazz-album-covers.surge.sh/images/"
 
 
-
-{--
-
-STEP 1
-======
-
-a. Change Rating to a union type with three constructors: Unrated, Liked,
-   Disliked. These constructors don't need arguments like the Msg constructors.
-
-b. Delete the old unrated, liked, and disliked constants below and update
-   the code to use the new union type constructors.
-
-       unrated  -> Unrated
-       liked    -> Liked
-       disliked -> Disliked
-
---}
-
-
 type Rating
     = Unrated
     | Liked
@@ -130,6 +111,18 @@ updateAlbum updater id albums =
         albums
 
 
+
+{--
+
+STEP 1
+======
+
+Add a `Search` constructor to the `Msg` type. It will need to accept a `String`
+argument that represents the query a user typed in.
+
+--}
+
+
 type Msg
     = Like Id
     | Dislike Id
@@ -142,8 +135,8 @@ type Msg
 STEP 2
 ======
 
-Replace the wildcard _ handler with a `Search` message handler to update the
-query stored in the model.
+Add a branch for the `Search` message constructor. Unwrap the `query` in
+`Search` and update the model's `query` field with it.
 
 --}
 
@@ -219,12 +212,9 @@ filterAlbums model =
 STEP 4
 ======
 
-a. Display the album search above the album list by calling the
-   `viewAlbumFilters` function inside the `view` function.
-
-b. Use the `filterAlbums` function to pass in filtered albums to the
-   `viewAlbumList` function. Notice that the `filterAlbums` function accepts
-   the model as the argument, not the list itself.
+Use the `filterAlbums` function to pass in filtered albums to the
+`viewAlbumList` function. Notice that the `filterAlbums` function accepts the
+model as the argument, not the list itself.
 
 --}
 
@@ -246,6 +236,12 @@ STEP 5
 Replace the commented out `onInput` handler with an `onInput` handler that uses
 the `Search` message constructor on the new query.
 
+Hint
+----
+Although you can keep the anonymous function that accepts the typed query,
+recall that the `Search` constructor is already a function that accepts a
+query.
+
 --}
 
 
@@ -265,10 +261,43 @@ viewAlbumFilters model =
         ]
 
 
+
+{--
+
+STEP 6
+======
+
+Display a "No matching albums" message if the list of albums is empty from the search.
+Otherwise display the list of albums as normal.
+
+Use the equivalent Elm syntax and Html functions to create this markup:
+<div class="albums">No matching albums</div>
+
+Hint
+----
+Check the `List` docs for a function that can help you here:
+http://package.elm-lang.org/packages/elm-lang/core/latest/List
+
+Hint
+----
+Alternatively, you can use pattern matching with a `case` expression on lists
+too. Use these resources for a hint on the correct syntax:
+* http://elm-lang.org/docs/syntax
+* http://elmprogramming.com/pattern-matching.html
+
+--}
+
+
 viewAlbumList : List Album -> Html Msg
 viewAlbumList albums =
-    ul [ class "album-list" ]
-        (List.map viewAlbum albums)
+    case albums of
+        [] ->
+            div [ class "albums" ]
+                [ text "No matching albums" ]
+
+        _ ->
+            ul [ class "album-list" ]
+                (List.map viewAlbum albums)
 
 
 viewAlbum : Album -> Html Msg

@@ -271,7 +271,7 @@ Display a "No matching albums" message if the list of albums is empty from the s
 Otherwise display the list of albums as normal.
 
 Use the equivalent Elm syntax and Html functions to create this markup:
-<div class="albums">No matching albums</div>
+<div class="no-albums">No matching albums</div>
 
 Hint
 ----
@@ -292,7 +292,7 @@ viewAlbumList : List Album -> Html Msg
 viewAlbumList albums =
     case albums of
         [] ->
-            div [ class "albums" ]
+            div [ class "no-albums" ]
                 [ text "No matching albums" ]
 
         _ ->

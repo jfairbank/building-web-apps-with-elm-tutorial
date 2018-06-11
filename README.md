@@ -103,7 +103,7 @@ if you fall behind and need a partially completed file to pick back up with.
 
 | Content | Filename | Ellie URL |
 | ------- | -------- | --------- |
-| Syntax and Functions | completed-demos/001-Functions.elm | https://ellie-app.com/p6pgLMyXjxa1 |
+| Syntax and Functions | completed-demos/001-Functions.elm | https://ellie-app.com/tKFbcTyhmka1 |
 | Static Applications | completed-demos/003-JazzAlbums.elm | https://ellie-app.com/p6nbh7B6SFa1 |
 | Dynamic Applications | completed-demos/004-JazzAlbums.elm | https://ellie-app.com/p6pNrZw39fa1 |
 | Working with Lists | completed-demos/006-JazzAlbums.elm | https://ellie-app.com/p6q9xfkntra1 |

@@ -58,7 +58,7 @@ exclaim phrase =
 excitedGreeting name =
     name
         |> String.toUpper
-        |> greet2 "Hi"
+        |> greet2 "Hey"
         |> exclaim
 
 

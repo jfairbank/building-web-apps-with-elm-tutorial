@@ -96,19 +96,23 @@ dislike =
 STEP 2
 ======
 
-a. Extract out the List.map portion into a helper function called updateAlbum.
-   It should accept a function that updates an album, the id of the album to
-   update, and the list of albums as arguments. The function should return a
-   new list of albums. Make sure you update the model's albums with record
-   update syntax. For example, if you wanted to like an album with the id 1,
-   then you could call it like this:
+a. Extract out the `List.map` portion into a helper function called
+   `updateAlbum`. It should accept a function that updates an album, the id of
+   the album to update, and the list of albums as arguments. The function
+   should return a new list of albums.
 
-        { model | albums = updateAlbum like 1 model.albums }
+   You will still use the same if-else structure inside the `List.map`
+   anonymous function, but you will use the function argument instead of the
+   hardcoded `like` function to change the album.
 
-b. Modify the update function to use updateAlbum for the LIKE message.
+   Here is an example of calling the final function (hint):
 
-c. Add back a handler in the update function for the DISLIKE message. Use the
-   updateAlbum and dislike helpers.
+       updateAlbum like msg.id model.albums
+
+b. Modify the `update` function to use `updateAlbum` for the `LIKE` message.
+
+c. Add back a handler in the `update` function for the `DISLIKE` message. Use the
+   `updateAlbum` and `dislike` helpers.
 
 --}
 

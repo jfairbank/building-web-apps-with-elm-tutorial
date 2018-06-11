@@ -90,7 +90,7 @@ For demos, please use these starter files/URLs to follow along.
 | Content | Filename | Ellie URL |
 | ------- | -------- | --------- |
 | Syntax and Functions | demos/001-Functions.elm | https://ellie-app.com/p6nNbVY6QYa1 |
-| Static Applications | demos/003-JazzAlbums.elm | https://ellie-app.com/p6hTJdDb5Ja1 |
+| Static Applications | demos/003-JazzAlbums.elm | https://ellie-app.com/tKDmpNdRfga1 |
 | Dynamic Applications | demos/004-JazzAlbums.elm | https://ellie-app.com/p6k2bXXcVwa1 |
 | Working with Lists | demos/006-JazzAlbums.elm | https://ellie-app.com/p6kxLwXCrDa1 |
 | Static Types and Type Aliases | demos/008-JazzAlbums.elm | https://ellie-app.com/p6m46vWvZHa1 |

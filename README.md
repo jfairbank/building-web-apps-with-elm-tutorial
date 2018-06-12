@@ -94,7 +94,7 @@ For demos, please use these starter files/URLs to follow along.
 | Dynamic Applications | demos/004-JazzAlbums.elm | https://ellie-app.com/p6k2bXXcVwa1 |
 | Working with Lists | demos/006-JazzAlbums.elm | https://ellie-app.com/p6kxLwXCrDa1 |
 | Static Types and Type Aliases | demos/008-JazzAlbums.elm | https://ellie-app.com/p6m46vWvZHa1 |
-| Input Events and Union Types | demos/009-JazzAlbums.elm | https://ellie-app.com/p6mG7crkzva1 |
+| Input Events and Union Types | demos/009-JazzAlbums.elm | https://ellie-app.com/tLh6C3RTcza1 |
 
 ## Completed Demos
 
@@ -107,8 +107,8 @@ if you fall behind and need a partially completed file to pick back up with.
 | Static Applications | completed-demos/003-JazzAlbums.elm | https://ellie-app.com/p6nbh7B6SFa1 |
 | Dynamic Applications | completed-demos/004-JazzAlbums.elm | https://ellie-app.com/p6pNrZw39fa1 |
 | Working with Lists | completed-demos/006-JazzAlbums.elm | https://ellie-app.com/p6q9xfkntra1 |
-| Static Types and Type Aliases | completed-demos/008-JazzAlbums.elm | https://ellie-app.com/p6qyzyymWZa1 |
-| Input Events and Union Types | completed-demos/009-JazzAlbums.elm | https://ellie-app.com/rMkVmjhyJLa1 |
+| Static Types and Type Aliases | completed-demos/008-JazzAlbums.elm | https://ellie-app.com/tLfc5qYnMsa1 |
+| Input Events and Union Types | completed-demos/009-JazzAlbums.elm | https://ellie-app.com/tLfK9wqvcMa1 |
 
 ## Exercises
 
@@ -120,7 +120,7 @@ inside each file.
 | Syntax and Functions | exercises/002-Functions.elm | https://ellie-app.com/p6s6NTLLw3a1 |
 | Enhance a Dynamic Application | exercises/005-JazzAlbums.elm | https://ellie-app.com/p6sWQ6PRMRa1 |
 | Working with Lists | exercises/007-JazzAlbums.elm | https://ellie-app.com/tL5vcBkS7La1 |
-| Input Events and Union Types | exercises/010-JazzAlbums.elm | https://ellie-app.com/rMBPb96nVva1 |
+| Input Events and Union Types | exercises/010-JazzAlbums.elm | https://ellie-app.com/tLhHP8bRNta1 |
 
 ## Completed Exercises
 
@@ -135,7 +135,7 @@ to expand.
 | Syntax and Functions | completed-exercises/002-Functions.elm | https://ellie-app.com/p6vyYwsXj8a1 |
 | Enhance a Dynamic Application | completed-exercises/005-JazzAlbums.elm | https://ellie-app.com/p6vW7v94YQa1 |
 | Working with Lists | completed-exercises/007-JazzAlbums.elm | https://ellie-app.com/tL5V32WTJQa1 |
-| Input Events and Union Types | completed-exercises/010-JazzAlbums.elm | https://ellie-app.com/rMCkRSMBkBa1 |
+| Input Events and Union Types | completed-exercises/010-JazzAlbums.elm | https://ellie-app.com/tLgxh5qqJca1 |
 
 </details>
 

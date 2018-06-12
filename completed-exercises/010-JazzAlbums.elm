@@ -74,7 +74,9 @@ type alias Model =
 
 initialModel : Model
 initialModel =
-    Model albums ""
+    { albums = albums
+    , query = ""
+    }
 
 
 
